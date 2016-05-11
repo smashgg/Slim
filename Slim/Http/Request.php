@@ -218,7 +218,8 @@ class Request
     {
         if (!isset($this->env['slim.request.query_hash'])) {
             $output = array();
-            if (function_exists('mb_parse_str') && !isset($this->env['slim.tests.ignore_multibyte'])) {
+			if (function_exists('mb_parse_str') && !defined('HHVM_VERSION')
+					&& !isset($this->env['slim.tests.ignore_multibyte'])) {
                 mb_parse_str($this->env['QUERY_STRING'], $output);
             } else {
                 parse_str($this->env['QUERY_STRING'], $output);
