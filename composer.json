@@ -1,5 +1,5 @@
 {
-    "name": "slim/slim",
+    "name": "smashgg/slim",
     "type": "library",
     "description": "Slim Framework, a PHP micro framework",
     "keywords": ["microframework","rest","router"],
@@ -7,9 +7,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Josh Lockhart",
-            "email": "info@joshlockhart.com",
-            "homepage": "http://www.joshlockhart.com/"
+            "name": "Smashgg",
+            "email": "hello@smash.gg"
         }
     ],
     "require": {
